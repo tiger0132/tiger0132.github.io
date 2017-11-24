@@ -4,14 +4,29 @@
 
     
   <url>
-    <loc>https://tiger0132.tk/2017/10/29/%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
-    <lastmod>2017-11-24T13:38:32.818Z</lastmod>
+    <loc>https://tiger0132.tk/2017/11/24/%E3%80%90BFS%E3%80%91%E5%85%AB%E6%95%B0%E7%A0%81%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2017-11-24T13:42:05.081Z</lastmod>
     <data>
         <display>
-        <title>线段树</title>
-        <pubTime>2017-10-29T14:39:47.000Z</pubTime>
+        <title>【BFS】八数码问题</title>
+        <pubTime>2017-11-24T13:42:05.000Z</pubTime>
         
-        <tag>线段树</tag>
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://tiger0132.tk/2017/10/15/%E3%80%90DP%E3%80%91%E4%BA%8C%E5%85%83%E7%BB%84dp/</loc>
+    <lastmod>2017-11-24T13:40:23.393Z</lastmod>
+    <data>
+        <display>
+        <title>【DP】二元组dp</title>
+        <pubTime>2017-10-15T13:48:51.000Z</pubTime>
+        
+        <tag>DP</tag>
          
          
            
@@ -21,14 +36,14 @@
 
     
   <url>
-    <loc>https://tiger0132.tk/2017/10/15/pair-dp/</loc>
-    <lastmod>2017-11-24T13:37:13.160Z</lastmod>
+    <loc>https://tiger0132.tk/2017/10/29/%E3%80%90%E7%BA%BF%E6%AE%B5%E6%A0%91%E3%80%91%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+    <lastmod>2017-11-24T13:40:08.386Z</lastmod>
     <data>
         <display>
-        <title>二元组dp</title>
-        <pubTime>2017-10-15T13:48:51.000Z</pubTime>
+        <title>【线段树】线段树</title>
+        <pubTime>2017-10-29T14:39:47.000Z</pubTime>
         
-        <tag>DP</tag>
+        <tag>线段树</tag>
          
          
            
@@ -55,7 +70,7 @@
 
     
   <url>
-    <loc>https://tiger0132.tk/2017/10/11/RP%E5%AF%BC%E8%AE%BA/</loc>
+    <loc>https://tiger0132.tk/2017/10/11/%E3%80%90%E8%BD%AC%E3%80%91RP%E5%AF%BC%E8%AE%BA/</loc>
     <lastmod>2017-10-29T14:43:56.004Z</lastmod>
     <data>
         <display>

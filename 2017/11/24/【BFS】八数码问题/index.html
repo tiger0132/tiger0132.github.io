@@ -99,7 +99,7 @@
 
 
 
-  <meta name="keywords" content="DP," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -110,18 +110,17 @@
 
 
 
-<meta name="description" content="简介二元组dp，指与dp相关的参数有两个时的一类dp。 持续更新中! 解法进度  最小化最小值 &amp;amp; 最大化最大值  最小化最大值 &amp;amp; 最大化最小值  两元素相等  LIS  最小(大)化二元组最小(大)值例题：Codeforces 2B 解法：10等于2*5，只要分别dp出2和5数量最少">
-<meta name="keywords" content="DP">
+<meta name="description" content="Think twice, code once.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="二元组dp">
-<meta property="og:url" content="https://tiger0132.tk/2017/10/15/pair-dp/index.html">
+<meta property="og:title" content="【BFS】八数码问题">
+<meta property="og:url" content="https://tiger0132.tk/2017/11/24/【BFS】八数码问题/index.html">
 <meta property="og:site_name" content="Tiger0132的小站">
-<meta property="og:description" content="简介二元组dp，指与dp相关的参数有两个时的一类dp。 持续更新中! 解法进度  最小化最小值 &amp;amp; 最大化最大值  最小化最大值 &amp;amp; 最大化最小值  两元素相等  LIS  最小(大)化二元组最小(大)值例题：Codeforces 2B 解法：10等于2*5，只要分别dp出2和5数量最少的路径然后取min即可。 总结：分别最小化然后取min即可。 最大(小)化二元组最小(大)值例题">
+<meta property="og:description" content="Think twice, code once.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-24T13:37:13.160Z">
+<meta property="og:updated_time" content="2017-11-24T13:42:05.081Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="二元组dp">
-<meta name="twitter:description" content="简介二元组dp，指与dp相关的参数有两个时的一类dp。 持续更新中! 解法进度  最小化最小值 &amp;amp; 最大化最大值  最小化最大值 &amp;amp; 最大化最小值  两元素相等  LIS  最小(大)化二元组最小(大)值例题：Codeforces 2B 解法：10等于2*5，只要分别dp出2和5数量最少的路径然后取min即可。 总结：分别最小化然后取min即可。 最大(小)化二元组最小(大)值例题">
+<meta name="twitter:title" content="【BFS】八数码问题">
+<meta name="twitter:description" content="Think twice, code once.">
 
 
 
@@ -151,12 +150,12 @@
 
 
 
-  <link rel="canonical" href="https://tiger0132.tk/2017/10/15/pair-dp/"/>
+  <link rel="canonical" href="https://tiger0132.tk/2017/11/24/【BFS】八数码问题/"/>
 
 
 
 
-  <title>二元组dp | Tiger0132的小站</title>
+  <title>【BFS】八数码问题 | Tiger0132的小站</title>
   
 
 
@@ -283,7 +282,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://tiger0132.tk/2017/10/15/pair-dp/">
+    <link itemprop="mainEntityOfPage" href="https://tiger0132.tk/2017/11/24/【BFS】八数码问题/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Tiger0132">
@@ -300,7 +299,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">二元组dp</h2>
+          <h2 class="post-title" itemprop="name headline">【BFS】八数码问题</h2>
         
 
         <div class="post-meta">
@@ -312,8 +311,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-15T21:48:51+08:00">
-                2017-10-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-24T21:42:05+08:00">
+                2017-11-24
               </time>
             
 
@@ -381,27 +380,7 @@
       
 
       
-        <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>二元组dp，指与dp相关的参数有两个时的一类dp。</p>
-<p>持续更新中!</p>
-<h3 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h3><h4 id="进度"><a href="#进度" class="headerlink" title="进度"></a>进度</h4><ul>
-<li style="list-style: none"><input type="checkbox" checked> 最小化最小值 &amp; 最大化最大值</li>
-<li style="list-style: none"><input type="checkbox"> 最小化最大值 &amp; 最大化最小值</li>
-<li style="list-style: none"><input type="checkbox" checked> 两元素相等</li>
-<li style="list-style: none"><input type="checkbox"> LIS</li>
-</ul>
-<h4 id="最小-大-化二元组最小-大-值"><a href="#最小-大-化二元组最小-大-值" class="headerlink" title="最小(大)化二元组最小(大)值"></a>最小(大)化二元组最小(大)值</h4><p>例题：<a href="http://codeforces.com/problemset/problem/2/B" target="_blank" rel="noopener">Codeforces 2B</a></p>
-<p>解法：10等于2*5，只要分别dp出2和5数量最少的路径然后取min即可。</p>
-<p>总结：分别最小化然后取min即可。</p>
-<h4 id="最大-小-化二元组最小-大-值"><a href="#最大-小-化二元组最小-大-值" class="headerlink" title="最大(小)化二元组最小(大)值"></a>最大(小)化二元组最小(大)值</h4><p>例题：<a href="http://codeforces.com/problemset/problem/837/D" target="_blank" rel="noopener">Codeforces 839D</a></p>
-<p>解法：</p>
-<p>总结：</p>
-<h4 id="使二元组两元素相等"><a href="#使二元组两元素相等" class="headerlink" title="使二元组两元素相等"></a>使二元组两元素相等</h4><p>前提：<strong>必须支持区间减法</strong></p>
-<p>例题：<a href="http://codeforces.com/problemset/problem/873/B" target="_blank" rel="noopener">Codeforces 873B</a></p>
-<p>解法：相等就是差为0，所以只要”前缀和”后装进桶里，差值相同相减即可，特判差值已经为0的情况。</p>
-<p>总结：相等转化为差为0，只要满足区间减法，”前缀和”后装进桶里即可。</p>
-<h4 id="二元组LIS"><a href="#二元组LIS" class="headerlink" title="二元组LIS"></a>二元组LIS</h4><p>例题：<a href="http://codevs.cn/problem/1822/" target="_blank" rel="noopener">CodeVS 1822</a></p>
-<p>解法：未知</p>
-
+        
       
     </div>
     
@@ -421,7 +400,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://tiger0132.tk/2017/10/15/pair-dp/" title="二元组dp">https://tiger0132.tk/2017/10/15/pair-dp/</a>
+    <a href="https://tiger0132.tk/2017/11/24/【BFS】八数码问题/" title="【BFS】八数码问题">https://tiger0132.tk/2017/11/24/【BFS】八数码问题/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -434,12 +413,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/DP/" rel="tag"># DP</a>
-          
-        </div>
-      
 
       
       
@@ -449,8 +422,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/10/12/常见错误/" rel="next" title="常见错误">
-                <i class="fa fa-chevron-left"></i> 常见错误
+              <a href="/2017/10/29/【线段树】线段树/" rel="next" title="【线段树】线段树">
+                <i class="fa fa-chevron-left"></i> 【线段树】线段树
               </a>
             
           </div>
@@ -459,8 +432,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/10/29/线段树/" rel="prev" title="线段树">
-                线段树 <i class="fa fa-chevron-right"></i>
+              <a href="/9999/12/31/DISCLAIMER/" rel="prev" title="【置顶】DISCLAIMER">
+                【置顶】DISCLAIMER <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -511,17 +484,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -540,7 +504,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -608,22 +572,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解法"><span class="nav-number">2.</span> <span class="nav-text">解法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#进度"><span class="nav-number">2.1.</span> <span class="nav-text">进度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最小-大-化二元组最小-大-值"><span class="nav-number">2.2.</span> <span class="nav-text">最小(大)化二元组最小(大)值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最大-小-化二元组最小-大-值"><span class="nav-number">2.3.</span> <span class="nav-text">最大(小)化二元组最小(大)值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使二元组两元素相等"><span class="nav-number">2.4.</span> <span class="nav-text">使二元组两元素相等</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二元组LIS"><span class="nav-number">2.5.</span> <span class="nav-text">二元组LIS</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
